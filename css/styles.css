@@ -5,14 +5,31 @@
 
 .btn {
   margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 
 img {
     position: relative;
     float: center;
-    width:  400px;
+    width: 1000px;
     height: 600px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
+}
+
+body {
+  background-color: #ffeecc;
+
+}
+
+h1 {
+  font-family: monospace;
+
+}
+
+label {
+  font-family: monospace;
+  font-weight: bold;
 }

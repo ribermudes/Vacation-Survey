@@ -10,54 +10,116 @@
 
   <body>
     <div class="container">
-
+      <img src="img/vacation.gif" alt="girls waving" />
       <h1>Discover Your Dream Vacation By Answering The Questions Below</h1>
       <form id="questions">
+        <label>Select Your Location</label>
+        <div class="radio">
+    <label>
+      <input type="radio" name="location" value="tropical">
+      Tropical
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="location" value="mountains">
+    Mountains
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="location" value="urban">
+      Urban
+    </label>
+  </div>
 
-        <label>What's Your Ideal Location</label>
-        <select class="form-control" id="location">
-          <option> </option>
-          <option value="tropical">Tropical</option>
-          <option value="mountain">Moutains</option>
-          <option value="urban">Urban</option>
-        </select>
+
 
         <label>Select Your Ideal Home</label>
-        <select class="form-control" id="location">
-          <option> </option>
-          <option value="tropical">Ocean Front Condo</option>
-          <option value="mountain">Cabin In The Woods</option>
-          <option value="urban">Penthouse With A View</option>
-        </select>
+          <div class="radio">
+      <label>
+        <input type="radio" name="home" value="condo">
+        Ocean Front Condo
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="home" value="cabin">
+      Cabin
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="home" value="penthouse">
+        Penthouse
+      </label>
+    </div>
 
         <label>What sounds more fun?</label>
-        <select class="form-control" id="fun">
-          <option> </option>
-          <option value="tropical">Laying On The Beach</option>
-          <option value="mountain">A Hike</option>
-          <option value="urban">Going To A Museum</option>
-        </select>
+          <div class="radio">
+      <label>
+        <input type="radio" name="fun" value="beach">
+        Laying On The Beach
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="fun" value="hike">
+      Hike In The Woods
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="fun" value="museum">
+        Going To A Museum
+      </label>
+    </div>
 
         <label>Pick A Drink</label>
-        <select class="form-control" id="drink">
-          <option> </option>
-          <option value="tropical">Mai Tai</option>
-          <option value="mountain">Beer</option>
-          <option value="urban">Martini</option>
-        </select>
+          <div class="radio">
+      <label>
+        <input type="radio" name="drink" value="maitai">
+        Mai Tai
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="drink" value="beer">
+      Beer
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="drink" value="martini">
+        Martini
+      </label>
+    </div>
 
         <label>Which Word Best Describes You?</label>
-        <select class="form-control" id="word">
-          <option> </option>
-          <option value="tropical">Laid Back</option>
-          <option value="mountain">Adventurous</option>
-          <option value="urban">Sophisticated</option>
-        </select>
+          <div class="radio">
+      <label>
+        <input type="radio" name="word" value="laidback">
+        Laid Back
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="word" value="adventurous">
+      Adventurous
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="word" value="sophisticated">
+        Sophisticated
+      </label>
+    </div>
 
         <button type="submit" class="btn">Show Me My Vacation!</button>
       </form>
       <div id="output">
       </div>
+
 
       <div id="final">
         <h3>You should go to...</h3>
@@ -65,16 +127,19 @@
       </div>
 
       <div id="hawaii">
+        <option value="5"
         <p>Based on your answers, your ideal vacation is Hawaii.</p>
         <img src="img/hawaii.jpeg">
       </div>
 
       <div id="yosemite">
+        <option value="10"
         <p>Based on your answers, your ideal vacation is Yosemite.</p>
         <img src="img/yosemite.jpeg">
       </div>
 
       <div id="newyork">
+        <option value="15"
         <p>Based on your answers, your ideal vacation is New York.</p>
         <img src="img/newyork.jpg">
       </div>
