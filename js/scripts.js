@@ -1,12 +1,38 @@
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
-    var location = $("input:radio[name=drink]:checked").val();
-    var home = $("input:radio[name=home]:checked").val();
-    var fun = $("input:radio[name=home]:checked").val();
-    var drink = $("input:radio[name=home]:checked").val();
-    var word = $("input:radio[name=word]:checked").val();
+    var location = $("#tropical").val();
+    var home = $("#condo").val();
+    var fun = $("#beach").val();
+    var drink = $("#maitai").val();
+    var word = $("#laidback").val();
 
+    var location = $("#mountains").val();
+    var home = $("#cabin").val();
+    var fun = $("#hike").val();
+    var drink = $("#beer").val();
+    var word = $("#adventurous").val();
+
+    var location = $("#urban").val();
+    var home = $("#penthouse").val();
+    var fun = $("#museum").val();
+    var drink = $("#martini").val();
+    var word = $("#sophisticated").val();
+
+    if ("tropical" && "condo" && "beach" && "maitai" && "laidback") {
+      $('#final').show();
+      $('#hawaii').show();
+    }
+
+    if ("mountains" && "cabin" && "hike" && "beer" && "adventurous") {
+        $('#final').show();
+        $('#yosemite').show();
+    }
+
+    if ("urban" && "penthouse" && "museum" && "martini" && "sophisticated") {
+        $('#final').show();
+        $('#newyork').show();
+    }
 
 
   });
