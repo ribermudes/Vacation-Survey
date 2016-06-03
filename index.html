@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Dream Vacation!</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h1>Discover Your Dream Vacation By Answering The Questions Below</h1>
+      <form id="questions">
+
+        <label>What's Your Ideal Location</label>
+        <select class="form-control" id="location">
+          <option> </option>
+          <option value="tropical">Tropical</option>
+          <option value="mountain">Moutains</option>
+          <option value="urban">Urban</option>
+        </select>
+
+        <label>Select Your Ideal Home</label>
+        <select class="form-control" id="location">
+          <option> </option>
+          <option value="tropical">Ocean Front Condo</option>
+          <option value="mountain">Cabin In The Woods</option>
+          <option value="urban">Penthouse With A View</option>
+        </select>
+
+        <label>What sounds more fun?</label>
+        <select class="form-control" id="fun">
+          <option> </option>
+          <option value="tropical">Laying On The Beach</option>
+          <option value="mountain">A Hike</option>
+          <option value="urban">Going To A Museum</option>
+        </select>
+
+        <label>Pick A Drink</label>
+        <select class="form-control" id="drink">
+          <option> </option>
+          <option value="tropical">Mai Tai</option>
+          <option value="mountain">Beer</option>
+          <option value="urban">Martini</option>
+        </select>
+
+        <label>Which Word Best Describes You?</label>
+        <select class="form-control" id="word">
+          <option> </option>
+          <option value="tropical">Laid Back</option>
+          <option value="mountain">Adventurous</option>
+          <option value="urban">Sophisticated</option>
+        </select>
+
+        <button type="submit" class="btn">Show Me My Vacation!</button>
+      </form>
+      <div id="output">
+      </div>
+
+      <div id="final">
+        <h3>You should go to...</h3>
+        <p>Thank you for taking our survey!</p>
+      </div>
+
+      <div id="hawaii">
+        <p>Based on your answers, your ideal vacation is Hawaii.</p>
+        <img src="img/hawaii.jpeg">
+      </div>
+
+      <div id="yosemite">
+        <p>Based on your answers, your ideal vacation is Yosemite.</p>
+        <img src="img/yosemite.jpeg">
+      </div>
+
+      <div id="newyork">
+        <p>Based on your answers, your ideal vacation is New York.</p>
+        <img src="img/newyork.jpg">
+      </div>
+
+    </div>
+    </div>
+
+  </body>
+
+</html>
