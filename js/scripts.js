@@ -1,39 +1,73 @@
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
-    var location = $("#tropical").val();
-    var home = $("#condo").val();
-    var fun = $("#beach").val();
-    var drink = $("#maitai").val();
-    var word = $("#laidback").val();
+    var location = $("input[name=location]:checked").val();
+    var home = $("input[name=home]:checked").val();
+    var fun = $("input[name=fun]:checked").val();
+    var drink = $("input[name=drink]:checked").val();
+    var word = $("input[name=word]:checked").val();
 
-    var location = $("#mountains").val();
-    var home = $("#cabin").val();
-    var fun = $("#hike").val();
-    var drink = $("#beer").val();
-    var word = $("#adventurous").val();
+    var totalH = 0;
+    var totalY = 0;
+    var totalN = 0;
 
-    var location = $("#urban").val();
-    var home = $("#penthouse").val();
-    var fun = $("#museum").val();
-    var drink = $("#martini").val();
-    var word = $("#sophisticated").val();
-
-    if ("tropical" && "condo" && "beach" && "maitai" && "laidback") {
-      $('#final').show();
-      $('#hawaii').show();
+    if (location=== "H") {
+      totalH += 1;
+    } else if (fun === "H") {
+      totalY += 1;
+    } else if (fun === "H") {
+      totalN += 1;
     }
 
-    if ("mountains" && "cabin" && "hike" && "beer" && "adventurous") {
-        $('#final').show();
-        $('#yosemite').show();
+    if (home === "Y") {
+      totalH += 1;
+    } else if (time === "H") {
+      totalY += 1;
+    } else if (time === "N") {
+      totalN += 1;
     }
 
-    if ("urban" && "penthouse" && "museum" && "martini" && "sophisticated") {
-        $('#final').show();
-        $('#newyork').show();
+    if (fun === "Y") {
+      totalH += 1;
+    } else if (fun === "H") {
+      totalY += 1;
+    } else if (fun === "N") {
+      totalN += 1;
     }
+
+    if (drink === "N") {
+      totalH += 1;
+    } else if (drink === "H") {
+      totalY += 1;
+    } else if (drink === "Y") {
+      totalN += 1;
+    }
+
+    if (word === "N") {
+      totalH += 1;
+    } else if (word === "H") {
+      totalY += 1;
+    } else if (word === "Y") {
+      totalN += 1;
+    }
+
+
+
+    if (totalH > totalN && totalY > totalC) {
+      $("#hawaii").show();
+      $("#yosemite").hide();
+      $("#newyork").hide();
+    } else if (totalY > totalH && totalN > totalH) {
+      $("#yosemite").show();
+      $("#hawaii").hide();
+      $("#newyork").hide();
+    } else {
+      $("#newyork").show();
+      $("#hawaii").hide();
+      $("#yosemite").hide();
+    }
+
 
 
   });
-});
+  });

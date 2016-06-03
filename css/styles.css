@@ -1,4 +1,4 @@
-#hawaii, #yosemite, #newyork, #final, #inputWarning1 {
+#final, #inputWarning1 {
   display: none;
 }
 
@@ -32,4 +32,16 @@ h1 {
 label {
   font-family: monospace;
   font-weight: bold;
+}
+
+.hawaii {
+  display: none;
+}
+
+.newyork {
+  display: none;
+}
+
+.yosemite {
+  display: none;
 }
