@@ -7,64 +7,64 @@ $(document).ready(function() {
     var drink = $("input[name=drink]:checked").val();
     var word = $("input[name=word]:checked").val();
 
-    var totalH = 0;
-    var totalY = 0;
-    var totalN = 0;
+    var totalHawaii = 0;
+    var totalYosemite = 0;
+    var totalNewYork = 0;
 
-    if (location=== "H") {
-      totalH += 1;
-    } else if (fun === "H") {
-      totalY += 1;
-    } else if (fun === "H") {
-      totalN += 1;
+    if (location=== "Hawaii") {
+      totalHawaii += 1;
+    } else if (fun === "Hawaii") {
+      totalYosemite += 1;
+    } else if (fun === "Hawaii") {
+      totalNewYork += 1;
     }
 
-    if (home === "Y") {
-      totalH += 1;
-    } else if (time === "H") {
-      totalY += 1;
-    } else if (time === "N") {
-      totalN += 1;
+    if (home === "Yosemite") {
+      totalHawaii += 1;
+    } else if (home === "Hawaii") {
+      totalYosemite += 1;
+    } else if (home === "NewYork") {
+      totalNewYork += 1;
     }
 
-    if (fun === "Y") {
-      totalH += 1;
-    } else if (fun === "H") {
-      totalY += 1;
-    } else if (fun === "N") {
-      totalN += 1;
+    if (fun === "Yosemite") {
+      totalHawaii += 1;
+    } else if (fun === "Hawaii") {
+      totalYosemite += 1;
+    } else if (fun === "NewYork")) {
+      totalNewYork += 1;
     }
 
-    if (drink === "N") {
-      totalH += 1;
-    } else if (drink === "H") {
-      totalY += 1;
-    } else if (drink === "Y") {
-      totalN += 1;
+    if (drink === "NewYork")) {
+      totalHawaii += 1;
+    } else if (drink === "Hawaii") {
+      totalYosemite += 1;
+    } else if (drink === "Yosemite") {
+      totalNewYork += 1;
     }
 
-    if (word === "N") {
-      totalH += 1;
-    } else if (word === "H") {
-      totalY += 1;
-    } else if (word === "Y") {
-      totalN += 1;
+    if (word === "NewYork")) {
+      totalHawaii += 1;
+    } else if (word === "Hawaii") {
+      totalYosemite += 1;
+    } else if (word === "Yosemite") {
+      totalNewYork += 1;
     }
 
 
 
-    if (totalH > totalN && totalY > totalC) {
-      $("#hawaii").show();
-      $("#yosemite").hide();
-      $("#newyork").hide();
-    } else if (totalY > totalH && totalN > totalH) {
-      $("#yosemite").show();
-      $("#hawaii").hide();
-      $("#newyork").hide();
+    if (totalHawaii > totalNewYork && totalYosemite) {
+      $("#islandgetaway").show();
+      $("#mountainretreat").hide();
+      $("#cityvacation").hide();
+    } else if (totalYosemite > totalHawaii && totalNewYork > totalHawaii) {
+      $("#mountainretreat").show();
+      $("#islandgetaway").hide();
+      $("#cityvacation").hide();
     } else {
-      $("#newyork").show();
-      $("#hawaii").hide();
-      $("#yosemite").hide();
+      $("#cityvacation").show();
+      $("#islandgetaway").hide();
+      $("#mountainretreat").hide();
     }
 
 
