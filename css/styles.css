@@ -1,7 +1,18 @@
-#final, #inputWarning1 {
+#islandgetaway {
   display: none;
 }
 
+#mountainretreat {
+  display: none;
+}
+
+#cityvacation {
+  display: none;
+}
+
+#final {
+  display: none;
+}
 
 .btn {
   margin-top: 20px;

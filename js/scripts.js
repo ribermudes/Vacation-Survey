@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
+    
+
     var location = $("input[name=location]:checked").val();
     var home = $("input[name=home]:checked").val();
     var fun = $("input[name=fun]:checked").val();
@@ -31,11 +33,11 @@ $(document).ready(function() {
       totalHawaii += 1;
     } else if (fun === "Hawaii") {
       totalYosemite += 1;
-    } else if (fun === "NewYork")) {
+    } else if (fun === "NewYork") {
       totalNewYork += 1;
     }
 
-    if (drink === "NewYork")) {
+    if (drink === "NewYork") {
       totalHawaii += 1;
     } else if (drink === "Hawaii") {
       totalYosemite += 1;
@@ -43,7 +45,7 @@ $(document).ready(function() {
       totalNewYork += 1;
     }
 
-    if (word === "NewYork")) {
+    if (word === "NewYork") {
       totalHawaii += 1;
     } else if (word === "Hawaii") {
       totalYosemite += 1;
@@ -53,7 +55,7 @@ $(document).ready(function() {
 
 
 
-    if (totalHawaii > totalNewYork && totalYosemite) {
+    if (totalHawaii > totalNewYork && totalYosemite > totalNewYork) {
       $("#islandgetaway").show();
       $("#mountainretreat").hide();
       $("#cityvacation").hide();
