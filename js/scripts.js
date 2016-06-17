@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
-    
 
     var location = $("input[name=location]:checked").val();
     var home = $("input[name=home]:checked").val();
@@ -53,8 +52,6 @@ $(document).ready(function() {
       totalNewYork += 1;
     }
 
-
-
     if (totalHawaii > totalNewYork && totalYosemite > totalNewYork) {
       $("#islandgetaway").show();
       $("#mountainretreat").hide();
@@ -68,8 +65,6 @@ $(document).ready(function() {
       $("#islandgetaway").hide();
       $("#mountainretreat").hide();
     }
-
-
 
   });
   });
